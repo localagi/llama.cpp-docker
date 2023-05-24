@@ -15,5 +15,8 @@ check `https://hub.docker.com/r/localagi/llama.cpp/tags` && `.env`
 `source alias.llama.cpp`
 
 **works**
-`llama.cpp quantize ...`
+
+e.g. `llama.cpp quantize --help`
+
+avail commands `llama.cpp ls`
 #WIP
