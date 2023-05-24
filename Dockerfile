@@ -14,5 +14,5 @@ ARG CMAKE_ARGS=
 RUN cmake .. ${CMAKE_ARGS}
 RUN cmake --build . --config Release
 
-WORKDIR bin
-CMD "main"
+WORKDIR /llama.cpp/build/bin
+ENV PATH="PATH=$PATH:/llama.cpp/build/bin"

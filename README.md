@@ -6,4 +6,7 @@ Sophisticated docker builds for parent project
 
 Easy setup. Compatible. Tweakable. Scaleable.
 
+clone && cd
+`docker compose pull`
+`source alias.llama.cpp`
 #WIP

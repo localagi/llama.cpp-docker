@@ -15,7 +15,6 @@ jobs:
   build-llama-cpp:
     uses: localagi/ai-dedicated-workflows/.github/workflows/operation-docker-build-publish.yml@v3
     with:
-      dockerfile: Dockerfile
       context-repository: ggerganov/llama.cpp
       context-repository-ref: ${{ github.ref_name }}
       registry-repo-name: llama.cpp
