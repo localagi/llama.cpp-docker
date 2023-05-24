@@ -27,7 +27,7 @@ jobs:
         suffix=${{ matrix.suffix }}
       build-args: |
         FROM_IMAGE=${{ matrix.from || 'python:3.10-slim-bullseye' }}
-        CMAKE_ARGS=${{ matrix.cmake-args }}
+        CMAKE_ARGS=${{ matrix.cmake-args }} -DLLAMA_BUILD_SERVER=1
       platforms: ${{ matrix.platforms || 'linux/amd64' }}
     secrets: inherit
     strategy:
