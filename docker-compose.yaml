@@ -8,7 +8,7 @@ services:
     init: true
     tty: true
     volumes:
-      - $LOCAL_MODEL_DIR:/models
+      - $LOCAL_MODEL_DIR:$LOCAL_MODEL_DIR
     deploy:
       resources:
         reservations:
