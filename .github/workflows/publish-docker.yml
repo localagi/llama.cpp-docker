@@ -22,7 +22,7 @@ jobs:
       tags: |
         type=schedule
         type=ref,event=branch
-        type=semver,pattern={{raw}}
+        type=raw,value=${{ github.ref_name }}
       flavor: |
         suffix=${{ matrix.suffix }}
       build-args: |
