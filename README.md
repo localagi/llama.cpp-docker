@@ -7,6 +7,13 @@ Sophisticated docker builds for parent project
 Easy setup. Compatible. Tweakable. Scaleable.
 
 clone && cd
+
+check `https://hub.docker.com/r/localagi/llama.cpp/tags` && `.env`
+
 `docker compose pull`
+
 `source alias.llama.cpp`
+
+**works**
+`llama.cpp quantize ...`
 #WIP
