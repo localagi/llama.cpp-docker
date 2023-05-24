@@ -61,10 +61,10 @@ jobs:
         # see https://hub.docker.com/r/nvidia/cuda/tags       
         - type: CUBLAS
           suffix: "-cublas-11.7.1" 
-          cmake-args: "-DLLAMA_CUBLAS=on -DCMAKE_CUDA_ARCHITECTURES=61;86"
+          cmake-args: "-DLLAMA_CUBLAS=on -DCMAKE_CUDA_ARCHITECTURES='61;86'"
           from: nvidia/cuda:11.7.1-devel-ubuntu22.04
           
         - type: CUBLAS
           suffix: "-cublas-12.1.1"
-          cmake-args: "-DLLAMA_CUBLAS=on -DCMAKE_CUDA_ARCHITECTURES=61;86;89"
+          cmake-args: "-DLLAMA_CUBLAS=on -DCMAKE_CUDA_ARCHITECTURES='61;86;89'"
           from: nvidia/cuda:12.1.1-devel-ubuntu22.04
