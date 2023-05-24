@@ -4,9 +4,9 @@ services:
 # GPU Inference        
   llama.cpp-server:
     image: localagi/llama.cpp:${LLAMA_CPP_VERSION}${LLAMA_CPP_FLAVOR}
-    command: ["--model", "/models/Wizard-Vicuna-13B-Uncensored-GGML/Wizard-Vicuna-13B-Uncensored.ggml.q5_1.bin" ]
-    init: true
-    tty: true
+    command: "server --model ${LOCAL_MODEL_DIR}/Wizard-Vicuna-7B-Uncensored-GGML/Wizard-Vicuna-7B-Uncensored.ggmlv3.q5_1.bin --host 0.0.0.0"
+    ports:
+      - 8080:8080
     volumes:
       - $LOCAL_MODEL_DIR:$LOCAL_MODEL_DIR
     deploy:
